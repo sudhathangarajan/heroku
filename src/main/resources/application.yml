@@ -1,0 +1,20 @@
+logging:
+  level:
+    root: DEBUG
+
+security.require-ssl: true
+
+server:
+  ssl:
+    key-store-password: password
+    key-store: classpath:spd.p12
+    key-store-type: PKCS12
+
+spring:
+  datasource:
+    url: r2dbc:h2:file:./db?options=DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+  h2.console.enabled: true
+  main:
+    web-application-type: reactive
