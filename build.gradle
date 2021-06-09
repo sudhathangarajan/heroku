@@ -22,7 +22,6 @@ dependencies {
     // libraries
     implementation 'org.apache.commons:commons-lang3'
     implementation 'io.springfox:springfox-spring-webflux:3.0.0'
-    implementation 'org.springframework.boot:spring-boot-devtools'
     implementation 'com.h2database:h2'
 
     runtimeOnly 'com.h2database:h2'
