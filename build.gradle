@@ -60,3 +60,11 @@ springBoot {
 test {
     useJUnitPlatform()
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'io.spd.csp.fieldmgmt.FieldManagementApplication'
+        )
+    }
+}
