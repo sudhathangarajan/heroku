@@ -57,7 +57,7 @@ springBoot {
 }
 
 test {
-    useJUnitPlatform()
+//    useJUnitPlatform()
 }
 
 task stage(dependsOn: ['build', 'clean'])
