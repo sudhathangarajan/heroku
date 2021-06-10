@@ -60,10 +60,13 @@ test {
     useJUnitPlatform()
 }
 
-jar {
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+/*jar {
     manifest {
         attributes(
                 'Main-Class': 'io.spd.csp.fieldmgmt.FieldManagementApplication'
         )
     }
-}
+}*/
